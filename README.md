@@ -66,7 +66,6 @@ A fully functional Active Directory home lab built on a personal laptop using Vi
 - Created Security Group `IT-Staff` and added jsmith as member
 - Created and linked GPO `IT-Policy` to IT OU
 - Configured GPO to prohibit access to Control Panel for IT OU users
-<img width="839" height="576" alt="image" src="https://github.com/user-attachments/assets/b73efaa0-268e-47d0-9968-8b63d4cdd491" />
 
 
 ### Phase 4 — Ubuntu Client Joined to Domain
@@ -116,16 +115,16 @@ sudo realm join lab.local -U Administrator
 # Verify domain join
 realm list
 
-<img width="359" height="318" alt="image" src="https://github.com/user-attachments/assets/1af4c0ad-d4b1-4f4b-92ee-7cde4557c985" />
+
 
 
 # Check AD user on Linux
 id jsmith@lab.local
-<img width="908" height="67" alt="image" src="https://github.com/user-attachments/assets/7acadc48-8085-4d62-9585-5678f1faf327" />
+
 
 # Log in as domain user
 su - jsmith@lab.local
-<img width="499" height="78" alt="image" src="https://github.com/user-attachments/assets/0baa3c9f-73f2-4759-ae1c-c514f62c944d" />
+
 
 # Configure DNS
 sudo resolvectl dns enp0s3 192.168.100.10
@@ -155,8 +154,10 @@ uid=1766001107(jsmith) gid=1766000513(domain users)
 groups=1766000513(domain users),1766001106(it-staff)
 ```
 <img width="874" height="91" alt="image" src="https://github.com/user-attachments/assets/b0809810-d7bc-4179-96dd-db9873b815d6" />
-
-
+<img width="839" height="576" alt="image" src="https://github.com/user-attachments/assets/b73efaa0-268e-47d0-9968-8b63d4cdd491" />
+<img width="359" height="318" alt="image" src="https://github.com/user-attachments/assets/1af4c0ad-d4b1-4f4b-92ee-7cde4557c985" />
+<img width="908" height="67" alt="image" src="https://github.com/user-attachments/assets/7acadc48-8085-4d62-9585-5678f1faf327" />
+<img width="499" height="78" alt="image" src="https://github.com/user-attachments/assets/0baa3c9f-73f2-4759-ae1c-c514f62c944d" />
 ---
 
 ## Concepts Demonstrated
