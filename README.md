@@ -147,7 +147,8 @@ sudo systemctl restart sssd
 uid=1766001107(jsmith) gid=1766000513(domain users)
 groups=1766000513(domain users),1766001106(it-staff)
 ```
-<img width="877" height="103" alt="image" src="https://github.com/user-attachments/assets/8651aa32-0899-42c6-93f4-43a8f63b3e97" />
+<img width="874" height="91" alt="image" src="https://github.com/user-attachments/assets/b0809810-d7bc-4179-96dd-db9873b815d6" />
+
 
 ---
 
